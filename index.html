@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Photo Feed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f182fe8cba.js" crossorigin="anonymous"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+    </style>
+</head>      
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-light bg-light p-3">
+            <a class="navbar-brand ms-4" href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="instagram-camera-logo" width="30px" height="30px">
+                <img src="https://logos-download.com/wp-content/uploads/2016/03/Instagram_Logo_2016-1536x436.png" alt="instagram-wordmark" height="30px" id="instaWordmark">
+              </a>
+            <div>
+              <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#makeNewPost">Create new post</button>
+              <div class="dropdown d-inline-block ms-2">
+                <button class="btn btn-secondary dropdown-toggle navbar-right me-5" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                 <li><a class="dropdown-item" href="#">Profile</a></li>
+                 <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                 <li><a class="dropdown-item" href="#">Privacy & Data</a></li>
+                 <div class="dropdown-divider"></div>
+                 <li><a class="dropdown-item text-danger">Log out</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        </div>
+          
+      <ul class="nav nav-tabs justify-content-center mt-2" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery" type="button" role="tab" aria-controls="Gallery-View" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="list-tab" data-bs-toggle="tab" data-bs-target="#list" type="button" role="tab" aria-controls="List-View" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+          <div class="row justify-content-center mx-auto d-flex px-5 mt-2">
+            <div class="col-4 d-flex justify-content-center p-2">
+                <img src="https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/web_first_images_release.png?itok=g21NrdRw" class="box">
+            </div>
+            <div class="col-4 d-flex justify-content-center p-2">
+                <img src="https://www.sciencenews.org/wp-content/uploads/2022/11/top-sapce-images_feat.jpg" class="box">
+            </div>
+            <div class="col-4 d-flex justify-content-center p-2">
+                <img src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/hubble_ngc6956.jpg" class="box">
+            </div>
+          </div>
+          <div class="row justify-content-center mx-auto d-flex px-5">
+            <div class="col-4 d-flex justify-content-center p-2">
+                <img src="https://helios-i.mashable.com/imagery/articles/01Y5HM2RZTwYlqoVu0m9nx3/hero-image.fill.size_1248x702.v1658958272.jpg" class="box">
+            </div>
+            <div class="col-4 d-flex justify-content-center p-2">
+                <img src="https://images.unsplash.com/photo-1606125784258-570fc63c22c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVlcCUyMHNwYWNlfGVufDB8fDB8fA%3D%3D&w=1000&q=80" class="box">
+            </div>
+            <div class="col-4 d-flex justify-content-center p-2">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/25/2021/04/08.ShawnNielsen_RosetteNebula-448887a.jpg" class="box">
+            </div>
+          </div>
+          <div class="row justify-content-center mx-auto d-flex px-5">
+            <div class="col-4 d-flex justify-content-center p-2">
+                <img src="http://img.timeinc.net/time/photoessays/2012/hubble_anniv_adds/hubble_anniv_adds_01.jpg" class="box">
+            </div>
+            <div class="col-4 d-flex justify-content-center p-2">
+                <img src="https://cdn.naturettl.com/wp-content/uploads/2020/06/27162344/beginners-guide-to-deep-space-photography-1200x1200-cropped.jpg" class="box">
+            </div>
+            <div class="col-4 d-flex justify-content-center p-2">
+                <img src="https://i.insider.com/5995c5a138c3fb3d008b48d4?width=1000&format=jpeg&auto=webp" class="box">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
+          <div class="row justify-content-center mt-2">
+            <div class="col-8">
+              <div class="card">
+                <div class="card-body">
+                  <div class="header">
+                    <div class="postTitle">
+                      The Carina Nebula
+                    </div>
+                    <div class="postDate">1/23</div>
+                  </div> 
+                  <img src="https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/web_first_images_release.png?itok=g21NrdRw" class="img-fluid">
+                  <p class="likes">3,569 likes</p>
+                  <p class="caption">Shot by the James Webb telescope in 2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-2">
+            <div class="col-8">
+              <div class="card">
+                <div class="card-body">
+                  <div class="header">
+                    <div class="postTitle">
+                      The Pillars of Creation
+                    </div>
+                    <div class="postDate">2/7</div>
+                  </div>
+                  <img src="https://www.sciencenews.org/wp-content/uploads/2022/11/top-sapce-images_feat.jpg" class="img-fluid">
+                  <p class="likes">277 likes</p>
+                  <p class="caption">Shot by the Hubble space telescope</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-2">
+            <div class="col-8">
+              <div class="card">
+                <div class="card-body">
+                  <div class="header">
+                    <div class="postTitle">
+                      Spiral Galaxy NGC 6956
+                    </div>
+                    <div class="postDate">3/13</div>
+                  </div>
+                  <img src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/hubble_ngc6956.jpg" class="img-fluid">
+                  <p class="likes">3,456 likes</p>
+                  <p class="caption">Shot by the Hubble space telescope</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-2">
+            <div class="col-8">
+              <div class="card">
+                <div class="card-body">
+                  <div class="header">
+                    <div class="postTitle">
+                      Southern Nebula Ring
+                    </div>
+                    <div class="postDate">3/22</div>
+                    <img src="https://helios-i.mashable.com/imagery/articles/01Y5HM2RZTwYlqoVu0m9nx3/hero-image.fill.size_1248x702.v1658958272.jpg" class="img-fluid">
+                    <p class="likes">1,623 likes</p>
+                    <p class="caption">Shot by the James Webb telescope</p>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-2">
+            <div class="col-8">
+              <div class="card">
+                <div class="card-body">
+                  <div class="header">
+                    <div class="postTitle">
+                      The Soul Nebula
+                    </div>
+                    <div class="postDate">4/15</div>
+                  </div>
+                    <img src="https://images.unsplash.com/photo-1606125784258-570fc63c22c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVlcCUyMHNwYWNlfGVufDB8fDB8fA%3D%3D&w=1000&q=80" class="img-fluid">
+                    <p class="likes">3,997 likes</p>
+                    <p class="caption">What a cool name. Photo by Beat Schuler</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-2">
+            <div class="col-8">
+              <div class="card">
+                <div class="card-body">
+                  <div class="header">
+                    <div class="postTitle">
+                      The Rosette Nebula
+                    </div>
+                    <div class="postDate">5/09</div>
+                  </div>
+                  <img src="https://images.immediate.co.uk/production/volatile/sites/25/2021/04/08.ShawnNielsen_RosetteNebula-448887a.jpg"" class="img-fluid">
+                  <p class="likes">566 likes</p>
+                  <p class="caption">Beautiful. Shot by Shawn Nielsen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal" tabindex="-1" id="makeNewPost">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Create a new post</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="m-0"><label for="caption">Caption:</label></p>
+                  <input type="textarea" placeholder="Add your caption here" name="caption" class="w-100" rows="2"></textarea>
+                  <button class="btn btn-light border mt-3"><i class="fa-solid fa-camera"></i></button>
+                  <button class="btn btn-light border mt-3"><i class="fa-solid fa-location-dot"></i></button>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+</html>

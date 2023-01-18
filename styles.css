@@ -1,0 +1,50 @@
+#instaWordmark {
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.box {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 50%;
+    background-color: black;
+
+}
+
+.nav-tab {
+    border: none
+}
+.header {
+    margin-bottom: 5px;
+    padding: 0;
+}
+.postTitle {
+    display: inline-block;
+    margin: auto 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+.postDate {
+    width: 20%;
+    float: right;
+    color: rgb(186, 186, 186);
+    display: inline-block;
+    text-align: end;
+    margin: auto 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.likes {
+    margin: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.caption {
+    margin-left: 5px;
+    margin-bottom: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
